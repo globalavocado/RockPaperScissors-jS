@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  var p1 = new Player('Alex');
-  var p2 = new Player('Mihai');
+  var p1 = new Player('Sam');
+  var p2 = new Player('Dan');
   var game = new Game(p1, p2);
 
   $('.choices img').on('click', function(){
