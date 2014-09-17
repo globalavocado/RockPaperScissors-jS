@@ -55,6 +55,22 @@ describe 'Rock-Paper-Scissors' do
 
   context 'draws' do
 
+    describe 'any random picks' do
+
+      it 'any picks for both players should be random' do
+        
+        pick = player1.picks :random and player2.picks :random
+        expect(game).to receive(:random_pick)
+
+
+# give parameter
+# call game.random_pick 
+# implement random pick into game
+
+      end
+    end
+
+
     describe 'any identical picks' do
 
       it 'should result in no winner' do

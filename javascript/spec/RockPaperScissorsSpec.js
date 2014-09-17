@@ -166,6 +166,17 @@ describe("Rock-Paper-Scissors", function() {
 
     });
 
+
+    describe('random pick', function() {
+       
+       it('should be one of the 5 picks', function(){
+        player1.randomPicks();
+
+        expect(['rock', 'paper', 'scissors', 'lizard', 'spock']).toContain(player1.pick); 
+       });
+    
+    }); 
+
   });
 
   describe('victory messages', function() {
@@ -173,7 +184,7 @@ describe("Rock-Paper-Scissors", function() {
     it("should return the winner's name, the verb and the loser's name", function() {
       player1.picks('scissors');
       player2.picks('rock');
-      expect(game.winningMessage()).toEqual('Alex crushes Mario');
+      expect(game.winningMessage()).toEqual('Sam crushes Dan');
     });
 
   });

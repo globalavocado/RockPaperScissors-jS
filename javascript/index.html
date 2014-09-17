@@ -8,7 +8,7 @@
 
 <body>
 
-<h1>Rock - Paper - Scissors - Lizard - Spock</h1>
+<heading><h1>Rock - Paper - Scissors - Lizard - Spock</h1></heading>
 <section class = "gamepic">
 <img src='images/rock.png' data-pick='rock'>
 <img src='images/paper.png' data-pick='paper'>
@@ -31,16 +31,17 @@ var game = new Game (p1, p2);
 
 $('.gamepic img').on('click', function(){
   p1.picks($(this).data('pick'));
-  p2.picks('rock');
+  p2.randomPicks($(this).data('pick'));
 
-console.log('Hello')
+
+// console.log('Hello')
 // $('#results').prepend('<ol>' + game.winningMessage() + '</ol>');
 $("<ol>" + game.winningMessage()+ "</ol>").prependTo('#results').slideDown();
-$("#results li:gt(3)").fadeOut(function(){
+$("#results ol:gt(4)").fadeOut("slow", function(){
   $(this).remove();
-  console.log('A')
+  // console.log('A')
   });
-  console.log('B')
+  // console.log('B')
   })
 })
 

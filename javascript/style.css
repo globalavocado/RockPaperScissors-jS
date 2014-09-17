@@ -1,20 +1,28 @@
+header {
+  display:  block;
+}
+
+h1 {
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+width: 67%;
+}
+
 body {
-  background-color: #E0E4CC;
+  background-color: #4ECDC4;
   font-family: 'Open Sans', sans-serif;
   margin: 15px 0 0 30px;
 }
 
-h1 {
-  font-size: 30px;
-  font-weight: bold;
-}
 
 .gamepic img{
-  padding: 15px;
-  margin-right: 2.5%;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: 1s opacity ease;
+margin-left: 3.5%;
+/* padding: 5px; */
+/* margin-right: 3%; */
+cursor: pointer;
+opacity: 0.5;
+transition: 1s opacity ease;
 }
 
 .gamepic img:hover{
@@ -22,10 +30,10 @@ h1 {
 }
 
 #results ol{
-  background: #A7DBD8;
-  color: #FA6900;
+  background: #556270;
+  color: #C7F464;
   border-radius: 10px;
   padding: 5px;
-  width: 80%;
+  width: 71%;
   margin-bottom: 10px;
 }

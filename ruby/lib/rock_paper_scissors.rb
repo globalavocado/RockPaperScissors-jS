@@ -20,6 +20,8 @@ class Game
     end
   end
 
+  
+
   private
 
   def same_pick?
@@ -39,5 +41,7 @@ class Player
   def picks(pick)
     @pick = pick
   end
+
+
 
 end
