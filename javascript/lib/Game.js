@@ -43,7 +43,7 @@ Game.prototype.winningMessage = function(){
  		this._victoryVerbFor(this.winner().pick, this.loser().pick), 
  		this.loser().name].join(' '); 		
  	} else {
- 		message = 'Draw';
+ 		message = "it's a draw...";
  	}
  	return message;
  };

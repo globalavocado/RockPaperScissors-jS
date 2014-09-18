@@ -1,25 +1,39 @@
-header {
-  display:  block;
-}
-
-h1 {
-font-size: 30px;
-font-weight: bold;
-text-align: center;
-width: 67%;
-}
-
 body {
   background-color: #4ECDC4;
   font-family: 'Open Sans', sans-serif;
-  margin: 15px 0 0 30px;
+  margin: 0;
+  padding: 0;
 }
 
+header {
+  display:  block;
+  height: 70px;
+  width: 100%;
+  background-color: #556270;
+  color: #C7F464;
+}
+
+h1, h2 {
+font-weight: bold;
+text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.gamepic{
+  width: 100%;
+}
 
 .gamepic img{
 margin-left: 3.5%;
-/* padding: 5px; */
-/* margin-right: 3%; */
+padding: 5px; 
+margin-right: 3%; 
 cursor: pointer;
 opacity: 0.5;
 transition: 1s opacity ease;
@@ -29,11 +43,13 @@ transition: 1s opacity ease;
   opacity: 1;
 }
 
-#results ol{
-  background: #556270;
-  color: #C7F464;
-  border-radius: 10px;
-  padding: 5px;
-  width: 71%;
+#results li {
   margin-bottom: 10px;
+  background: #556270;
+  border-radius: 10px;
+  list-style-type: none;
+  /*margin-left: 120px;*/
+  color: #C7F464;
+  text-align: center;
+  margin-right: 90px;
 }
