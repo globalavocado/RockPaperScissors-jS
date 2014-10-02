@@ -1,8 +1,8 @@
 body {
   background-color: #4ECDC4;
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
+  /*margin: 0;
+  padding: 0;*/
 }
 
 header {
@@ -57,8 +57,8 @@ transition: 1s opacity ease;
 footer {
   position: absolute;
   bottom: 0px;
-  padding: 0px 20px 20px 20px;
-  width: 100%;
+  padding: 20px 20px 20px 20px;
+  /*width: 100%;*/
   background-color: #556270;
   color: #C7F464;
 }
@@ -68,6 +68,12 @@ footer a:visited{
 }
 
 footer img{
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
+  float: left;
 }
 
+.footertext{
+  padding: 20px;
+  margin-top:16px;
+  display: inline;
+}
